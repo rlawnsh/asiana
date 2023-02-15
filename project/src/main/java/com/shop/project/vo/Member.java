@@ -1,4 +1,4 @@
-package vo;
+package com.shop.project.vo;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class Member {
+
     private String id;
     private String pwd;
     private String name;
