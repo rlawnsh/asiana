@@ -23,4 +23,9 @@ public class MemberServiceImpl implements MemberService {
         return memberMapper.selectMember(member);
     }
 
+    @Override
+    public void postMember(Member member) {
+        memberMapper.insertMember(member);
+    }
+
 }

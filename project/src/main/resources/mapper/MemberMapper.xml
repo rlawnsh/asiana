@@ -6,7 +6,12 @@
 <mapper namespace="com.shop.project.repository.MemberMapper">
 
     <select id="selectMember" resultType="Member">
-			select * from members
+			SELECT * FROM members
     </select>
+
+    <insert id="insertMember">
+        INSERT INTO members
+        VALUES (#{member.id},#{member.pwd},#{member.name},#{member.address},#{member.phone},#{member.email})
+    </insert>
 
 </mapper>

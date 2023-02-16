@@ -8,4 +8,6 @@ public interface MemberService {
 
     List<Member> getMember(Member member);
 
+    void postMember(Member member);
+
 }
