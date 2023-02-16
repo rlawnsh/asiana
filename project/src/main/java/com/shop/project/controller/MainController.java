@@ -4,7 +4,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.shop.project.service.MemberServiceImpl;
@@ -36,7 +35,6 @@ public class MainController {
 
 	@GetMapping("/ShopMiniMall/member")
 	public String getMember() {
-		System.out.println("여긴 됐는데요?");
 		return "/ShopMiniMall/login2";
 	}
 
@@ -57,7 +55,6 @@ public class MainController {
 
 	@PostMapping("/ShopMiniMall/login")
 	public String login(Member member) {
-		System.out.println("여긴 됐는데요?2");
 		return "/ShopMiniMall/memberShip";
 	}
 }
